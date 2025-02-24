@@ -23,7 +23,7 @@
     This parameter "pts/compress-7zip" indicates it measures CPU performance by doing compression tasks.
     
     > Example result: 
-    
+
                     Test: Compression Rating:
                         3435
                         3463
@@ -45,13 +45,19 @@
 
     In order to answer this question, you need to complete the following table by filling out blanks with the measurement results corresponding to each instance type.
 
-    | Size        | CPU performance | Memory performance |
-    | ----------- | --------------- | ------------------ |
-    | `t2.micro` |                 |                    |
-    | `t2.medium`  |                 |                    |
-    | `c5d.large` |                 |                    |
+    | Size        |    CPU performance    | Memory performance |
+    | ----------- | --------------------- | ------------------ |
+    | `t2.micro`  | 3459 MIPS / 3053 MIPS |    10368.08 MB/s   |
+    | `t2.medium` | 9830 MIPS / 5906 MIPS |    19104.22 MB/s   | 
+    | `c5d.large` | 7449 MIPS / 4899 MIPS |    13388.91 MB/s   |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
+
+    t2.micro  has 1 vCPU and 1 GiB of memory;
+    t2.medium has 2 vCPU and 4 GiB of memory;
+    c5d.large has 2 vCPU and 4 GiB of memory;
+
+    So overall, VMs with more vCPU and bigger memory will perform better, but the results won't increase proportionally. Also, VMs with the same amount of vCPUs and memory may have very different performance as well.
 
 ## Question 2: Measure the EC2 Network performance
 
