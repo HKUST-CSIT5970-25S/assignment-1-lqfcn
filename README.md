@@ -54,8 +54,8 @@
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
 
     > t2.micro  has 1 vCPU and 1 GiB of memory;
-    t2.medium has 2 vCPU and 4 GiB of memory;
-    c5d.large has 2 vCPU and 4 GiB of memory;
+    > t2.medium has 2 vCPU and 4 GiB of memory;
+    > c5d.large has 2 vCPU and 4 GiB of memory;
 
     Overall, VMs with more vCPU and bigger memory will perform better, but the results won't increase proportionally. 
     
@@ -67,12 +67,12 @@
 
     | Type                      | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | `t3.medium` - `t3.medium` |                |          |
-    | `m5.large` - `m5.large`   |                |          |
-    | `c5n.large` - `c5n.large` |                |          |
-    | `t3.medium` - `c5n.large` |                |          |
-    | `m5.large` - `c5n.large`  |                |          |
-    | `m5.large` - `t3.medium`  |                |          |
+    | `t3.medium` - `t3.medium` |      3707      |   0.231  |
+    | `m5.large` - `m5.large`   |      5048      |   0.163  |
+    | `c5n.large` - `c5n.large` |      5069      |   0.138  |
+    | `t3.medium` - `c5n.large` |      2877      |   0.558  |
+    | `m5.large` - `c5n.large`  |      2765      |   0.718  |
+    | `m5.large` - `t3.medium`  |      4557      |   0.156  |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
 
@@ -80,8 +80,8 @@
 
     | Connection                | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | N. Virginia - Oregon      |                |          |
-    | N. Virginia - N. Virginia |                |          |
-    | Oregon - Oregon           |                |          |
+    | N. Virginia - Oregon      |      33.2      |   61.938 |
+    | N. Virginia - N. Virginia |      5079      |   0.163  |
+    | Oregon - Oregon           |      5059      |   0.169  |
  
     > Region: US East (N. Virginia), US West (Oregon). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. All instances are `c5.large`. Note: Use public IP address when using iPerf within the same region.
