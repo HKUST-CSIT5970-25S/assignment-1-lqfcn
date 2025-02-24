@@ -15,9 +15,11 @@
 
 1. (1 mark) Report the name of measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
 
+    ##Solution:
     Name of measurement tool: Phoronix Test Suite
 
     > Example config: phoronix-test-suite run pts/compress-7zip
+    
     This parameter pts/compress-7zip indicates it measures CPU performance by doing compression tasks.
     
     > Example result: 
