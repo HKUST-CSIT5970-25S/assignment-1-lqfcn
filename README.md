@@ -5,9 +5,9 @@
 
 ---
 
-### Name: 
-### Student Id: 
-### Email: 
+### Name: LIAO, Qifan
+### Student Id: 21079456
+### Email: qliaoad@connect.ust.hk
 
 ---
 
@@ -15,7 +15,27 @@
 
 1. (1 mark) Report the name of measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
 
-    > Your answer goes here.
+    > Phoronix Test Suite
+
+    Example config: phoronix-test-suite run pts/compress-7zip
+    > This parameter pts/compress-7zip indicates it measures CPU performance by doing compression tasks.
+    
+    Example result: Test: Compression Rating:
+                        3435
+                        3463
+                        3478
+
+                    Average: 3459 MIPS
+                    Deviation: 0.63%
+
+                    Test: Decompression Rating:
+                        3055
+                        3052
+                        3052
+
+                    Average: 3053 MIPS
+                    Deviation: 0.06%
+    > The results below quantifies the CPU's capability of performing compression and decompression tasks. The deviation value indicates the stability of different rounds of tests.
 
 2. (1 mark) Run your measurement tool on general purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
 
