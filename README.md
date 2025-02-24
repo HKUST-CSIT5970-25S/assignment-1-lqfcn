@@ -53,11 +53,13 @@
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
 
-    t2.micro  has 1 vCPU and 1 GiB of memory;
+    > t2.micro  has 1 vCPU and 1 GiB of memory;
     t2.medium has 2 vCPU and 4 GiB of memory;
     c5d.large has 2 vCPU and 4 GiB of memory;
 
-    Overall, VMs with more vCPU and bigger memory will perform better, but the results won't increase proportionally. Also, VMs with the same amount of vCPUs and memory may have very different performance as well.
+    Overall, VMs with more vCPU and bigger memory will perform better, but the results won't increase proportionally. 
+    
+    Also, VMs with the same amount of vCPUs and memory may have very different performance as well.
 
 ## Question 2: Measure the EC2 Network performance
 
